@@ -38,8 +38,7 @@ class OggettoArchivio {
   }
   prova(str){
     for (let x in this){
-      console.log(x);
-      
+      console.log(this[x])
     }
   }
 
