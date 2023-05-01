@@ -36,6 +36,12 @@ class OggettoArchivio {
   defineArray(libro){
     return libro;
   }
+  prova(str){
+    for (let x in this){
+      console.log(x);
+      
+    }
+  }
 
 }
 
@@ -45,6 +51,7 @@ console.log(oggettoArchivio.oggettoLibro2.titolo);
 console.log(oggettoArchivio);
 console.log(oggettoArchivio.nameContains(stringa_ricerca));
 console.log(oggettoArchivio.defineArray(oggettoArchivio.oggettoLibro1));
+console.log(oggettoArchivio.prova(stringa_ricerca));
 
 /*
 return this.oggettoLibro1.titolo.includes(str);
