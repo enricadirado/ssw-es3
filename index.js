@@ -2,15 +2,36 @@
 import './style.css';
 
 // Write Javascript code!
-class libro {
-  constructor(autore, titolo, posizione, nominativo) {
-    this.autore = autore;
+
+/*
+il metodo in archivio deve restituire un array di libri che corrispondono a una stringa.
+l'array principale è creato con il costruttore. 
+la classe archivio contiene
+  -l'array con i libri
+  -funzione (il metodo)
+i libri sono creati con la classe libro
+*/
+
+
+class OggettoLibro {
+  constructor(titolo, autore, posizione, nominativo) {
     this.titolo = titolo;
+    this.autore = autore;
     this.posizione = posizione;
     this.nominativo= nominativo;
   }
 }
 
-const libro1 = new libro("walt whitman", "leaves of grass", "S3L3P4", "enrica di rado");
-const libro2 = new libro("antonia pozzi", "desiderio di cose leggere", "S1L5P2", "davide di rado");
-const libro3 = new libro("pierluigi cappello", "stato di quiete", "S3L2P5", "");
+class OggettoArchivio {
+  constructor() {
+    this.oggettoLibro1 = new OggettoLibro("walt whitman", "leaves of grass", "S3L3P4", "enrica di rado");
+    this.oggettoLibro2 = new OggettoLibro("antonia pozzi", "desiderio di cose leggere", "S1L5P2", "davide di rado");
+    this.oggettoLibro3 = new OggettoLibro("pierluigi cappello", "stato di quiete", "S3L2P5", "");
+  }
+  search () {
+  }
+}
+
+var oggettoArchivio = new OggettoArchivio();
+console.log(oggettoArchivio.oggettoLibro1.autore); 
+console.log(oggettoArchivio.oggettoLibro2.titolo);
