@@ -12,7 +12,7 @@ la classe archivio contiene
 i libri sono creati con la classe libro
 */
 
-var stringa_ricerca='walt';
+var stringa_ricerca='es';
 var new_archivio=[];
 
 class OggettoLibro {
@@ -27,7 +27,7 @@ class OggettoLibro {
 class OggettoArchivio {
   constructor() {
     this.oggettoLibro1 = new OggettoLibro("walt whitman", "leaves of grass", "S3L3P4", "enrica di rado");
-    this.oggettoLibro2 = new OggettoLibro("walt antonia pozzi", "desiderio di cose leggere", "S1L5P2", "davide di rado");
+    this.oggettoLibro2 = new OggettoLibro("antonia pozzi", "desiderio di cose leggere", "S1L5P2", "davide di rado");
     this.oggettoLibro3 = new OggettoLibro("pierluigi cappello", "stato di quiete", "S3L2P5", "");
   }
   prova(str){
