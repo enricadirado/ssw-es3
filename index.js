@@ -46,16 +46,3 @@ class OggettoArchivio {
 
 var oggettoArchivio = new OggettoArchivio();
 console.log('principale:', oggettoArchivio.prova(stringa_ricerca));
-
-
-
-/*
-return this.oggettoLibro1.titolo.includes(str);
-
-nameContains(str) {
-    return this.oggettoLibro1.titolo;
-  }
-
-console.log(oggettoArchivio.nameContains(stringa_ricerca));
-
-*/
