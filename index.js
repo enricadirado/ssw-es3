@@ -12,7 +12,7 @@ la classe archivio contiene
 i libri sono creati con la classe libro
 */
 
-var stringa_ricerca='wal';
+var stringa_ricerca='walt';
 var new_archivio=[];
 
 class OggettoLibro {
@@ -27,31 +27,35 @@ class OggettoLibro {
 class OggettoArchivio {
   constructor() {
     this.oggettoLibro1 = new OggettoLibro("walt whitman", "leaves of grass", "S3L3P4", "enrica di rado");
-    this.oggettoLibro2 = new OggettoLibro("antonia pozzi", "desiderio di cose leggere", "S1L5P2", "davide di rado");
+    this.oggettoLibro2 = new OggettoLibro("walt antonia pozzi", "desiderio di cose leggere", "S1L5P2", "davide di rado");
     this.oggettoLibro3 = new OggettoLibro("pierluigi cappello", "stato di quiete", "S3L2P5", "");
-  }
-  nameContains(str) {
-    return this.oggettoLibro1.titolo;
-  }
-  defineArray(libro){
-    return libro;
   }
   prova(str){
     for (let x in this){
-      console.log(this[x])
+      console.log(this[x]);
+      for (let y in this[x]){
+        if (this[x][y].match(str)){
+          new_archivio.push(this[x][y]);
+        } 
+        /*console.log(this[x][y]);*/     
+      }
     }
+    console.log(new_archivio);
   }
-
 }
 
 var oggettoArchivio = new OggettoArchivio();
-console.log(oggettoArchivio.oggettoLibro1.autore); 
-console.log(oggettoArchivio.oggettoLibro2.titolo);
-console.log(oggettoArchivio);
-console.log(oggettoArchivio.nameContains(stringa_ricerca));
-console.log(oggettoArchivio.defineArray(oggettoArchivio.oggettoLibro1));
-console.log(oggettoArchivio.prova(stringa_ricerca));
+console.log('principale:', oggettoArchivio.prova(stringa_ricerca));
+
+
 
 /*
 return this.oggettoLibro1.titolo.includes(str);
+
+nameContains(str) {
+    return this.oggettoLibro1.titolo;
+  }
+
+console.log(oggettoArchivio.nameContains(stringa_ricerca));
+
 */
