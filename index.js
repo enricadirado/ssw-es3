@@ -11,6 +11,7 @@ la classe archivio contiene
   -funzione (il metodo)
 i libri sono creati con la classe libro
 */
+const result= document.getElementById('result');
 
 var stringa_ricerca='es';
 var new_archivio=[];
@@ -46,3 +47,4 @@ class OggettoArchivio {
 
 var oggettoArchivio = new OggettoArchivio();
 console.log('principale:', oggettoArchivio.prova(stringa_ricerca));
+result.innerHTML=new_archivio;
